@@ -5,7 +5,7 @@
 [core]
 	excludesfile = /Users/allan/.gitignore_global
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /usr/bin/twdiff --resume --reverse --wait \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
@@ -82,3 +82,5 @@
 [github]
 	user = allanwhite
 	token = 56bcec4f392d13ebfddcac3f950c7817
+[merge]
+	ff = false
